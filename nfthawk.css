@@ -1,0 +1,294 @@
+body {
+    font-family: Poppins;
+  }
+
+  ::selection {
+    background-color: rgb(0, 208, 255);
+  }
+
+  .introduction {
+    background-image: url(darkbg1.jpg);
+    background-size: cover;
+    padding-bottom: 21vh;
+  }
+
+  .introduction ul {
+    margin-right: vh;
+  }
+
+  nav ul li a:hover {
+    color: rgb(0, 208, 255) !important;
+  }
+
+  .intro-para h1 {
+    font-size: 10vh;
+    color: lavenderblush;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .intro-para {
+    padding-top: 10vh;
+  }
+
+  .intro-para .nft {
+    color: rgb(0, 208, 255);
+    text-shadow: 1px 1px 10px;
+  }
+
+  .intro-para .nft-img {
+    margin-top: -8vh;
+    animation: bounce-top 7s ease-in-out alternate-reverse infinite;
+  }
+
+  @keyframes bounce-top {
+    0% {
+      transform: translateY(0vh);
+    }
+
+    25% {
+      transform: translateY(-2vh);
+    }
+
+    50% {
+      transform: translateY(2vh);
+    }
+  }
+
+  .below-tagline a {
+    background-color: rgb(0, 208, 255);
+    box-shadow: rgb(0, 208, 255, 0.4) 0px 5px,
+      rgb(0, 208, 255, 0.3) 0px 10px, rgb(0, 208, 255, 0.2) 0px 15px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  .below-tagline a:hover {
+    background-color: white;
+    color: rgb(0, 208, 255) !important;
+    transition: 0.4s;
+  }
+
+  .about-us,
+  .pricing,
+  .contact-us {
+    padding-bottom: 8vh;
+    background-color: #0f0e12;
+
+  }
+
+  .about-us h1,
+  .reviews h1,
+  .pricing h1,
+  .faq h1,
+  .contact-us h1 {
+    padding-top: 6vh;
+    font-size: 6vh;
+  }
+
+  .about-us-hr {
+    width: 40%;
+    color: rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    opacity: 1;
+    height: 0.4vh;
+    margin: auto;
+  }
+
+  .about-us img {
+    animation: bounce-top 7s linear alternate-reverse infinite;
+    margin-bottom: 2vh;
+  }
+
+  .reviews-hr {
+    width: 55%;
+    color: rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    opacity: 1;
+    height: 0.4vh;
+    margin: auto;
+  }
+
+  .reviews,
+  .faq,
+  .copyright {
+    background-color: #0f0e12f5;
+  }
+
+  .pricing-hr {
+    width: 15%;
+    color: rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    opacity: 1;
+    height: 0.4vh;
+    margin: auto;
+  }
+
+  .pricing-cards .card {
+    box-shadow: 1px 1px 10px white;
+  }
+
+  .pricing-cards b {
+    color: rgb(0, 208, 255) !important;
+    font-size: 7vh !important;
+  }
+
+  .pricing-cards .moon,
+  .snow {
+    color: rgb(0, 208, 255);
+    border-radius: 50%;
+    box-shadow: rgba(0, 208, 255, 0.4) 0 0 0 3px, rgba(0, 208, 255, 0.3) 0 0 0 10px, rgba(0, 208, 255, 0.2) 0 0 0 15px;
+  }
+
+  .pricing-cards ul {
+    list-style: none;
+  }
+
+  .pricing-cards ul li:before {
+    content: '✓';
+    color: rgb(0, 208, 255);
+  }
+ 
+  .pricing-cards .cross:before {
+    content: 'X';
+    color: red;
+  }
+
+  .faq-hr {
+    width: 50%;
+    color: rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    opacity: 1;
+    height: 0.4vh;
+    margin: auto;
+
+  }
+
+  .faq-info,
+  .contact-us-info {
+    width: 70%;
+  }
+  .faq-info,.reviews-info{
+    padding-bottom:10vh !important;
+  }
+
+  .faq-info b {
+    color: rgb(0, 208, 255);
+  }
+
+  .accordion-item {
+    box-shadow: rgba(0, 208, 255, 0.6) -5px 5px;
+  }
+
+  .contact-us-hr {
+    width: 25%;
+    color: rgb(0, 208, 255);
+    background-color: rgb(0, 208, 255);
+    opacity: 1;
+    height: 0.4vh;
+    margin: auto;
+  }
+
+  .contact-us-info a {
+    background-color: rgb(0, 208, 255);
+  }
+  .contact-us-info a:hover{
+  opacity: .6;
+  }
+ 
+
+  /*-------------------------------Media Queries----------------------------*/
+
+  @media all and (max-width: 434px) {
+    .below-tagline a {
+      margin-bottom: 1rem;
+    }
+    
+  }
+
+  @media all and (max-width: 510px) {
+    .intro-para h1 {
+      font-size: 16vw;
+    }
+  }
+  @media all and (max-width:570px){
+    .contact-us-info span {
+      flex-direction: column;
+      
+    }
+    .contact-us-info a{
+      margin: auto !important;
+    }
+    .about-us-info p{
+      text-align: center;
+    }
+  }
+
+  @media all and (max-width:768px) {
+    #card-2,
+    #card-4,
+    #card-5,
+    #card-8 {
+      min-width: 40vh !important;
+    }
+
+    .pricing-cards {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  @media all and (max-width: 992px) {
+    #card-1,
+    #card-3,
+    #card-6,
+    #card-7 {
+      display: none !important;
+    }
+
+    #card-2,
+    #card-4,
+    #card-5,
+    #card-8 {
+      min-width: 60vh;
+    }
+  }
+
+  @media all and (max-width: 1049px) {
+    .intro-para span {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .intro-para .below-tagline {
+      margin-top: 5rem;
+    }
+  }
+
+  @media all and (max-width:1199px) {
+    .about-us .about-us-info {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
+  }
